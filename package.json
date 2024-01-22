@@ -59,6 +59,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
+    "@govtechsg/document-store": "^3.0.0",
     "@govtechsg/open-attestation": "^6.9.0",
     "@tradetrust-tt/tt-verify": "^8.4.0"
   }

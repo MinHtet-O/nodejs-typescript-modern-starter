@@ -7,7 +7,7 @@ const mint = async ()=> {
     const tokenRegistryAddress = "0x5b10A8A851eA4a11aa96f8FC39BC05A990363fA1";
     const owner = "0x7020BE74E640aFa14430f2C807F511b1559C5F60";
     const holder = "0x7020BE74E640aFa14430f2C807F511b1559C5F60";
-    const tokenId = "0xaf9b5f7f7fad7dd546f392339bc6324b26cf63d50607e0418db928cb55399e3e";
+    const tokenId = "0xc634227c1726bbd1dc8573d048bc06b3e6b1da3dbd55568288f880a94373982c";
     const unconnectedWallet = new Wallet(privateKey);
     const provider = ethers.getDefaultProvider("sepolia");
     const wallet = unconnectedWallet.connect(provider);
