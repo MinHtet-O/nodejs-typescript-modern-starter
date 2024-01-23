@@ -2,7 +2,7 @@
     "version": "https://schema.openattestation.com/2.0/schema.json",
     "data": {
       "billFrom": {},
-      "billTo": { "company": {} },
+      "billTo": { "any": {} },
       "$template": {
         "type": "f76f4d39-8d23-455b-96ba-5889e0233641:string:EMBEDDED_RENDERER",
         "name": "575f0624-7f43-484c-9285-edd1ae96ebc6:string:INVOICE",

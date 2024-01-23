@@ -68,6 +68,7 @@ export const watchNode = () => {
   nodemon({
     script: pathToCode,
     ext: "js json",
+    ignore: ["output/**"], 
   });
 
   nodemon

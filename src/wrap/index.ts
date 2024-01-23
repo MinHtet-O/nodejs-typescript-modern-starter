@@ -4,6 +4,7 @@ import { writeJsonToFile } from "../io";
 const defaultRenderer = "https://tutorial-renderer.openattestation.com";
 const prepRawVerifiableDocument = async (documentStoreAddr: string, dns: string, rendererUrl?: string)=> {
     const document = {
+        "name": "Certificate of Completion",
         "$template": {
           "name": "main",
           "type": "EMBEDDED_RENDERER",
@@ -29,7 +30,6 @@ const prepRawVerifiableDocument = async (documentStoreAddr: string, dns: string,
 const wrapVerifiableDocument = async (documentStoreAddr: string, dns:string,rendererUrl?: string )=> {
     const rawDoc = await prepRawVerifiableDocument(documentStoreAddr, dns, rendererUrl);
     const wrappedDocument = wrapDocument(rawDoc);
-    writeJsonToFile(wrappedDocument);
     return wrappedDocument;
 }
 
